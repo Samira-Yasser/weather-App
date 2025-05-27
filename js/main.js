@@ -5,7 +5,7 @@ let submit = document.getElementById("submit");
 let weather = document.getElementById("weather");
 
 async function countryWeather() {
-    let x = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=c7ee15bc794341f281144828252105&q=cairo&days=3`)
+    let x = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=c7ee15bc794341f281144828252105&q=cairo&days=3`)
     if (x.ok) {
         let data = await x.json();
         displayCountryWeather(data.forecast.forecastday, data.location);
