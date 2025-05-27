@@ -12,7 +12,7 @@ async function countryWeather() {
         displayAnotherWeather(data.forecast.forecastday)
         console.log(data.forecast.forecastday);
     }else {
-        throw new Error("Weather data not found for " + term);
+        throw new Error("Weather data not found for cairo");
         
     }
 }
